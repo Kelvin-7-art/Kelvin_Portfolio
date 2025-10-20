@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Kelvin — Data Scientist & Developer. Email, LinkedIn, and WhatsApp." />
+  <title>Contact | Kelvin</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to home">Kelvin</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <!-- Primary nav -->
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li> <!-- auto-highlight via script.js -->
+        <li class="theme-slot">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☀️/🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== CONTACT INTRO ===== -->
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Contact Me</h1>
+        <p class="muted" style="margin-bottom:1.2rem;">
+          Have a project or idea in mind? I’m open to collaboration, internships, and freelance opportunities.
+        </p>
+
+        <!-- Quick contact cards -->
+        <div class="grid cards-2" style="margin-bottom:1rem;">
+          <!-- Email -->
+          <article class="card">
+            <h3>Email</h3>
+            <p class="muted">Fastest for proposals and documents.</p>
+            <p>
+              <a class="btn btn-sm" href="mailto:khotsokgarudi@gmail.com" aria-label="Email Kelvin at khotsokgarudi@gmail.com">
+                khotsokgarudi@gmail.com
+              </a>
+            </p>
+          </article>
+
+          <!-- LinkedIn -->
+          <article class="card">
+            <h3>LinkedIn</h3>
+            <p class="muted">Let’s connect professionally.</p>
+            <p>
+              <a class="btn btn-sm" href="https://www.linkedin.com/in/kelvin-k-641837291/" target="_blank" rel="noopener noreferrer" aria-label="Open Kelvin's LinkedIn profile">
+                View Profile
+              </a>
+            </p>
+          </article>
+
+          <!-- WhatsApp -->
+          <article class="card">
+            <h3>WhatsApp</h3>
+            <p class="muted">Quick chat for scheduling and follow-ups.</p>
+            <p>
+              <a class="btn btn-sm" href="https://wa.me/27729949575?text=Hi%20Kelvin%20%E2%80%94%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" aria-label="Start WhatsApp chat with Kelvin">
+                +27 72 994 9575
+              </a>
+            </p>
+          </article>
+
+          <!-- Location / Availability (optional info card) -->
+          <article class="card">
+            <h3>Availability</h3>
+            <p class="muted">
+              Based in South Africa (GMT+2). Open to remote work, part-time roles, and collaborations.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="gradient-edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Send a Message</h2>
+        <p class="muted" style="margin-bottom:1rem;">Prefer email or WhatsApp? Use the buttons above — otherwise drop me a line here.</p>
+
+        <form
+          class="card contact-form"
+          style="padding:1rem;"
+          action="mailto:khotsokgarudi@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <div style="display:grid; gap:1rem; grid-template-columns:repeat(2,minmax(0,1fr));">
+            <div>
+              <label for="name" class="muted">Full Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" style="width:100%;padding:.75rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);" />
+            </div>
+            <div>
+              <label for="email" class="muted">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" style="width:100%;padding:.75rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);" />
+            </div>
+          </div>
+
+          <div style="margin-top:1rem;">
+            <label for="message" class="muted">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell me a bit about your project or question…" style="width:100%;padding:.75rem;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);"></textarea>
+          </div>
+
+          <div style="margin-top:1rem; display:flex; gap:.75rem; flex-wrap:wrap;">
+            <button type="submit" class="btn">Send Message</button>
+            <a class="btn btn-outline" href="mailto:khotsokgarudi@gmail.com?subject=Project%20Inquiry&body=Hi%20Kelvin%2C%0A%0A" aria-label="Compose an email to Kelvin">Open Email App</a>
+            <a class="btn btn-ghost" href="https://wa.me/27729949575?text=Hi%20Kelvin%2C%20I%27d%20like%20to%20chat%20about..." target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp with pre-filled message">Open WhatsApp</a>
+          </div>
+
+          <p class="muted" style="margin-top:.75rem;font-size:.9rem;">
+            By using the form above, your default email app will open to send the message.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Kelvin • All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

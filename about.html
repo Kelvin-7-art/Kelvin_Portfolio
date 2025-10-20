@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Kelvin — Data Scientist & Developer focused on AI, ML, and Fraud Detection." />
+  <title>About | Kelvin</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to home">Kelvin</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <!-- Primary nav -->
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li> <!-- auto-highlight handled by script.js -->
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="theme-slot">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+            ☀️/🌙
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== ABOUT ME ===== -->
+    <section class="section about">
+      <div class="container about-container">
+        <div class="about-text">
+          <span class="badge">About Me</span>
+          <h1>Hi, I’m <span class="highlight">Kelvin</span></h1>
+          <p class="lead">
+            I’m a Data Scientist & Developer based in South Africa, specializing in
+            <strong>machine learning</strong>, <strong>fraud detection</strong>, and <strong>web development</strong>.
+          </p>
+          <p>
+            My journey began with a BSc in <strong>IT (Data Science)</strong>. Since then, I’ve built projects in
+            credit card fraud detection, AI-driven apps, and engaging data visualizations.
+          </p>
+          <p class="muted">
+            Beyond code, I’m inspired by faith, personal growth, and sharing knowledge to help others level up.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-sm">See my work</a>
+            <a href="contact.html" class="btn btn-outline btn-sm">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="about-image hero-image">
+          <img src="about.png" alt="Kelvin working on a laptop" />
+          <div class="hero-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="gradient-edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== EDUCATION & EXPERIENCE ===== -->
+    <section class="section timeline">
+      <div class="container">
+        <h2 class="section-title">Education & Experience</h2>
+        <div class="grid cards-2">
+          <article class="card timeline-item">
+            <span class="date">2025</span>
+            <h3>BSc IT (Data Science)</h3>
+            <p>Eduvos — specialized in Data Science, Machine Learning, and Software Development.</p>
+          </article>
+
+          <article class="card timeline-item">
+            <span class="date">2024 — Present</span>
+            <h3>Projects</h3>
+            <p>AI-driven fraud detection, portfolio websites, and ML model deployment to production-like apps.</p>
+          </article>
+
+          <article class="card timeline-item">
+            <span class="date">Future</span>
+            <h3>Career Goals</h3>
+            <p>Advance in Artificial Intelligence, contribute to FinTech innovation, and mentor others in tech.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Kelvin • All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

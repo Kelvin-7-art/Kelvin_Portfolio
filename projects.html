@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kelvin's projects in ML, AI, and Web Development." />
+  <title>Projects | Kelvin</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to home">Kelvin</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <!-- Primary nav -->
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li> <!-- auto-highlight via script.js -->
+        <li><a href="contact.html">Contact</a></li>
+        <li class="theme-slot">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☀️/🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects">
+      <div class="container">
+        <h1 class="section-title">My Projects</h1>
+        <p class="muted" style="margin-bottom:1.2rem;">
+          A selection of work showcasing skills across Machine Learning, AI, and Web Development.
+        </p>
+
+        <!-- Cards -->
+        <div class="grid cards-2">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="project1.png" alt="Credit Card Fraud Detection project cover" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>Credit Card Fraud Detection</h3>
+              <p>
+                Built ML models (Logistic Regression, Random Forest, Neural Networks) to detect fraudulent transactions in near real-time with explainability.
+              </p>
+              <a href="#" class="btn btn-sm">View Details</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <img src="project2.png" alt="Personal Portfolio Website cover" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                Responsive multi-page portfolio using semantic HTML, modern CSS, and vanilla JS with dark/light theming.
+              </p>
+              <a href="#" class="btn btn-sm">View Details</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <img src="project3.png" alt="ML Application Deployment cover" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>ML Application Deployment</h3>
+              <p>
+                Streamlit app packaging trained fraud models with real-time inputs; structured for containerization and CI-friendly deployments.
+              </p>
+              <a href="#" class="btn btn-sm">View Details</a>
+            </div>
+          </article>
+          <!-- Project 4 -->
+          <article class="project-card">
+            <img src="Forex-trading-bot-And-which-Forex-trading-bot-is-considered-the-best-2-1024x675.png" alt="Stock Market Predictor" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>Stock Market Forecasting App</h3>
+              <p>
+                Deep Learning and fbprophet (Facebook Prophet) algorithms to forecast prices and watch the market movement.
+              </p>
+              <a href="#" class="btn btn-sm">View Details</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <img src="project4.png" alt="Data Visualization Dashboards cover" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>Data Visualization Dashboards</h3>
+              <p>
+                Interactive dashboards in Python (Matplotlib/Seaborn) for exploratory analysis and reporting with clear, actionable visuals.
+              </p>
+              <a href="#" class="btn btn-sm">View Details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Kelvin • All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

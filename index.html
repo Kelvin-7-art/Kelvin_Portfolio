@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kelvin — Portfolio of an aspiring Data Scientist & Developer focused on AI, ML, and Fraud Detection." />
+  <title>Kelvin | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for a11y -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">
+        <a href="index.html" aria-label="Go to Kelvin home">Kelvin</a>
+      </div>
+
+      <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <!-- hamburger -->
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html" aria-current="page" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="theme-slot">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <div class="badge">Open to opportunities</div>
+          <h1>Hello, I’m <span class="highlight">Kelvin</span></h1>
+          <p class="lead">
+            Aspiring Data Scientist & Developer passionate about AI, ML, and Fraud Detection.
+            <span class="muted break"><span id="role-rotator" aria-live="polite">Data Science • ML • Web Dev</span></span>
+          </p>
+
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Hire Me</a>
+            <!-- Optional CV link: replace # with your file -->
+            <a href="KelvinCV_.pdf" class="btn btn-ghost" download>Download CV</a>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/Kelvin-7-art" aria-label="GitHub" class="social">GitHub</a>
+            <a href="https://www.linkedin.com/in/kelvin-k-641837291/" aria-label="LinkedIn" class="social">LinkedIn</a>
+            <a href="https://huggingface.co/TekMonger" aria-label="Hugging Face" class="social">Hugging Face</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="profile.png" alt="Kelvin profile photo" loading="eager" decoding="async" />
+          <div class="hero-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="gradient-edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid cards-4">
+          <article class="card">
+            <h3>Python</h3>
+            <p>Data analysis, machine learning, automation, and backend scripting.</p>
+          </article>
+          <article class="card">
+            <h3>Machine Learning</h3>
+            <p>Logistic Regression, Random Forest, Neural Networks, Fraud Detection.</p>
+          </article>
+          <article class="card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript; deploy with Streamlit & Docker.</p>
+          </article>
+          <article class="card">
+            <h3>Data Visualization</h3>
+            <p>Matplotlib, Seaborn, and dashboards for clear insights.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS SECTION ===== -->
+    <section class="section featured-projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid cards-2">
+          <article class="project-card">
+            <img src="project1.png" alt="Credit Card Fraud Detection" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>Credit Card Fraud Detection</h3>
+              <p>Models to flag fraudulent transactions in (near) real-time.</p>
+              <a href="projects.html" class="btn btn-sm">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="project2.png" alt="Personal Portfolio Website" loading="lazy" decoding="async" />
+            <div class="project-body">
+              <h3>Personal Portfolio</h3>
+              <p>Responsive multi-page site built with semantic HTML, CSS, and JS.</p>
+              <a href="projects.html" class="btn btn-sm">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Kelvin • All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
