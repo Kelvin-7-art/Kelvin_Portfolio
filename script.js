@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
       menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
-    // Close the menu after choosing a link (mobile)
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("mouseleave", () => link.classList.remove("glow"));
   });
 
-  /* ================= HERO IMAGE FLOAT (CSS-driven) ================= */
+  /* ================= HERO IMAGE FLOAT ================= */
   const heroImage = document.querySelector(".hero-image img");
   const prefersReduced = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
   if (heroImage && !prefersReduced) {
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const page = raw === "" ? "index.html" : raw;
   document.querySelectorAll(".nav-links a").forEach((a) => {
     if (a.getAttribute("href") === page) {
-      a.setAttribute("aria-current", "page"); // uses your existing CSS for [aria-current="page"]
+      a.setAttribute("aria-current", "page");
     }
   });
 });
